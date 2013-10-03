@@ -1,0 +1,13 @@
+<%= stylesheet_link_tag 'alerta' %>
+<%= javascript_include_tag 'alerta' %>
+
+<% if notice %>
+    <div class="alertas bgsuccess">
+      <p class="texto_alerta"><img style="margin-left: -42px;margin-top: -7px;position: absolute;" src="/assets/img_admin/icon_alerta_sucess.png" /><%= notice %></p>
+    </div>
+<% end %>
+<% if alert %>
+    <div class="alertas bgerror">
+      <p class="texto_alerta"><img style="margin-left: -42px;margin-top: -7px;position: absolute;" src="/assets/img_admin/icon_alerta_error.png" /><%= alert %></p>
+    </div>
+<% end %>
