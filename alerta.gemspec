@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Alerta::VERSION
   s.authors     = ["Criativittá"]
   s.email       = ["suporte@criativitta.com.br"]
-  s.homepage    = "www.criativitta.com.br"
+  s.homepage    = "http://www.criativitta.com.br"
   s.summary     = "Mostra uma barra de alerta no rodapé da página."
   s.description = "A barra de alerta mostrada no rodapé da página recebe
    as mensagens passadas no alert e notice, podem ser utilizadas com render. ex: render 'new', notice: 'Logado com sucesso!' "
