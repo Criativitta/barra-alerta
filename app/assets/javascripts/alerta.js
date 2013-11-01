@@ -1,4 +1,3 @@
-//= require jquery
 $(document).ready(function() {
     $('div#warn').click(function(){
         $(this).hide();
