@@ -1,5 +1,5 @@
 $(document).ready(function() {
     $('div#warn').click(function(){
         $(this).hide();
-    }).fadeOut(10000);
+    }).show().fadeOut(10000);
 });
