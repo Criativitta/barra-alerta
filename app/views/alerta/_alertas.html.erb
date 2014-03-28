@@ -1,3 +1,21 @@
+<%= stylesheet_link_tag 'alerta' %>
 <div id="warn" class="">
-  <%= render 'alerta/warn' %>
+  <% if notice %>
+      <div class="alertas bgsuccess">
+        <p class="texto_alerta"><img style="margin-left: -42px;margin-top: -7px;position: absolute;" src="/assets/img_admin/icon_alerta_sucess.png" /><%= notice %></p>
+      </div>
+  <% end %>
+  <% if alert %>
+      <div class="alertas bgerror">
+        <p class="texto_alerta"><img style="margin-left: -42px;margin-top: -7px;position: absolute;" src="/assets/img_admin/icon_alerta_error.png" /><%= alert %></p>
+      </div>
+  <% end %>
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('div#warn').click(function(){
+            $(this).hide();
+        }).show().fadeOut(10000);
+    });
+</script>
